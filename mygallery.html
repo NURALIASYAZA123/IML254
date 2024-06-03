@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+  <title>My Gallery</title>
+  <link rel="stylesheet" href="mygallery.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SYAZA</div>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="index.html">SYAZA</a></div>
+        <ul>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li class="dropdown">
+                <a href="#">My Family</a>
+                <ul class="dropdown-content">
+                    <li><a href="myparents.html">Parents</a></li>
+                    <li><a href="mysiblings.html">Siblings</a></li>
+                </ul>
+            </li>
+            <li><a href="myfriend.html">Friends</a></li>
+            <li><a href="myhobby.html">Hobby</a></li>
+            <li><a href="myexperience.html">Experience</a></li>
+            <li><a href="mygallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="main-header">
+      <h1>MY GALLERY</h1>
+      <div class="nav-buttons">
+        <button onclick="showSection('tiktok')">Tiktok Video</button>
+        <button onclick="showSection('raya2024')">Raya 2024</button>
+        <button onclick="showSection('universityLife')">University Life</button>
+        <button onclick="showSection('foodHunting')">Food Hunting</button>
+      </div>
+    </div>
+    <section id="tiktok" class="gallery-section">
+      <h2>Tiktok Video</h2>
+      <table class="invisible-table">
+        <tr>
+          <td><div class="item"><div class="title">Tiktok with Rania</div><video src="video/vidtiktok1.mp4" controls></video></div></td>
+          <td><div class="item"><div class="title">Tiktok with Groupmates</div><video src="video/vidtiktok2.mp4" controls></video></div></td>
+          <td><div class="item"><div class="title">Tiktok with Bestie</div><video src="video/vidtiktok3.mp4" controls></video></div></td>
+          <td><div class="item"><div class="title">Tiktok with Girls</div><video src="video/vidtiktok4.mp4" controls></video></div></td>
+        </tr>
+        <tr>
+          <td><div class="item"><div class="title">Tiktok with my Ummu</div><video src="video/vidtiktok5.mp4" controls></video></div></td>
+          <td><div class="item"><div class="title">Tiktok with my beloved Roommates</div><video src="video/vidtiktok6.mp4" controls></video></div></td>
+          <td><div class="item"><div class="title">Tiktok with BSMM member</div><video src="video/vidtiktok7.mp4" controls></video></div></td>
+          <td><div class="item"><div class="title">Tiktok at Merak Lake</div><video src="video/vidtiktok8.mp4" controls></video></div></td>
+        </tr>
+      </table>
+    </section>
+    <section id="raya2024" class="gallery-section hidden">
+      <h2>Raya 2024</h2>
+      <table class="invisible-table">
+        <tr>
+          <td><div class="item"><div class="title">Raya with Family</div><img src="Image/raya1.jpg" alt="Photo 1"></div></td>
+          <td><div class="item"><div class="title">Raya with my parents</div><img src="Image/raya2.jpg" alt="Photo 2"></div></td>
+          <td><div class="item"><div class="title">My Raya OOTD</div><img src="Image/raya3.jpg" alt="Photo 3"></div></td>
+          <td><div class="item"><div class="title">Duit Raya</div><img src="Image/raya4.jpg" alt="Photo 4"></div></td>
+        </tr>
+        <tr>
+          <td><div class="item"><div class="title">Raya with Cousin</div><img src="Image/raya5.jpg" alt="Photo 5"></div></td>
+          <td><div class="item"><div class="title">Lemang for Raya</div><img src="Image/raya6.jpg" alt="Photo 6"></div></td>
+          <td><div class="item"><div class="title">Raya at Village</div><img src="Image/raya7.jpg" alt="Photo 7"></div></td>
+          <td><div class="item"><div class="title">Raya with paddy field</div><img src="Image/raya8.jpg" alt="Photo 8"></div></td>
+        </tr>
+      </table>
+    </section>
+    <section id="universityLife" class="gallery-section hidden">
+      <h2>University Life</h2>
+      <table class="invisible-table">
+        <tr>
+          <td><div class="item"><div class="title">Our beloved Sir Firdaus</div><img src="Image/university1.jpg" alt="Photo 1"></div></td>
+          <td><div class="item"><div class="title">My Lovely Roommates</div><img src="Image/university2.jpg" alt="Photo 2"></div></td>
+          <td><div class="item"><div class="title">My Awesom Groupmates</div><img src="Image/university3.jpg" alt="Photo 3"></div></td>
+        </tr>
+        <tr>
+          <td><div class="item"><div class="title">UiTM college has no WATER</div><video src="video/university1.mp4" controls></video></div></td>
+          <td><div class="item"><div class="title">My Awesom Classmates</div><video src="video/university2.mp4" controls></video></div></td>
+          <td><div class="item"><div class="title">My individual presentation</div><video src="video/university3.mp4" controls></video></div></td>
+        </tr>
+      </table>
+    </section>
+    <section id="foodHunting" class="gallery-section hidden">
+      <h2>Food Hunting</h2>
+      <table class="invisible-table">
+        <tr>
+          <td><div class="item"><div class="title">Mac n Cheese</div><img src="Image/food1.jpg" alt="Photo 1"></div></td>
+          <td><div class="item"><div class="title">Spaghetti Olio Aglio</div><img src="Image/food2.jpg" alt="Photo 2"></div></td>
+          <td><div class="item"><div class="title">Korean Food</div><img src="Image/food3.jpg" alt="Photo 3"></div></td>
+          <td><div class="item"><div class="title">llao llao</div><img src="Image/food4.jpg" alt="Photo 4"></div></td>
+        </tr>
+        <tr>
+          <td><div class="item"><div class="title">Paprik Chiken and Sardine</div><img src="Image/food5.jpg" alt="Photo 5"></div></td>
+          <td><div class="item"><div class="title">Empire Sushi</div><img src="Image/food6.jpg" alt="Photo 6"></div></td>
+          <td><div class="item"><div class="title">Ayam Gepuk</div><img src="Image/food7.jpg" alt="Photo 7"></div></td>
+          <td><div class="item"><div class="title">Chiken chop and Pizza</div><img src="Image/food8.jpg" alt="Photo 8"></div></td>
+        </tr>
+      </table>
+    </section>
+    <footer>
+        <p>&copy; Syaza 2024. All Rights Reserved.</p>
+   </footer>
+  </main>
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.gallery-section').forEach(section => {
+        section.classList.add('hidden');
+      });
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+
+    // Show Tiktok Video section by default
+    document.addEventListener('DOMContentLoaded', () => {
+      showSection('tiktok');
+    });
+  </script>
+</body>
+</html>

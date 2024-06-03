@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merienda:wght@300..900&family=Playball&family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">SYAZA</div>
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="index.html">SYAZA</a></div>
+                <ul>
+                    <li><a href="education.html">Education</a></li>
+                    <li class="dropdown">
+                        <a href="#">My Family</a>
+                        <ul class="dropdown-content">
+                            <li><a href="myparents.html">Parents</a></li>
+                            <li><a href="mysiblings.html">Siblings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="myfriend.html">Friends</a></li>
+                    <li><a href="myhobby.html">Hobby</a></li>
+                    <li><a href="myexperience.html">Experience</a></li>
+                    <li><a href="mygallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="video-container">
+                <video autoplay muted loop class="bg-video">
+                    <source src="video/index.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop class="bg-video">
+                    <source src="video/index.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop class="bg-video">
+                    <source src="video/index.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Welcome</h1>
+                <p>to my personal website</p>
+                <a href="aboutme.html"> <button class="portfolio">About Me</button></a>
+            </div>
+        </div>
+    </main>
+    <audio id="background-audio" src="audio/audioindex.mp3" loop></audio>
+    <button id="playButton" title="Play background music"><i class="fas fa-music" title="Play background music"></i></button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('background-audio');
+            const playButton = document.getElementById('playButton');
+
+            playButton.addEventListener('click', () => {
+                audio.play().catch(error => {
+                    console.log('Play was prevented:', error);
+                });
+                playButton.style.display = 'none'; 
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sedan+SC&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <title>My Education Journey</title>
+    <link rel="stylesheet" href="education.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">SYAZA</div>
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="index.html">SYAZA</a></div>
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li class="dropdown">
+                        <a href="#">My Family</a>
+                        <ul class="dropdown-content">
+                            <li><a href="myparents.html">Parents</a></li>
+                            <li><a href="mysiblings.html">Siblings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="myfriend.html">Friends</a></li>
+                    <li><a href="myhobby.html">Hobby</a></li>
+                    <li><a href="myexperience.html">Experience</a></li>
+                    <li><a href="mygallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+        </nav>
+    </header>
+    <div class="header">
+        <h1>MY EDUCATION JOURNEY</h1>
+    </div>
+    <section class="timeline">
+        <div class="timeline-item" data-parent="timeline">
+            <h4 class="timeline-date">2011 - 2016</h4>
+            <h2>ELEMENTARY SCHOOL</h2>
+            <div class="timeline-content">
+
+                <p>Started my academic journey at SEKOLAH KEBANGSAAN BANDAR BARU KUALA SELANGOR. My elementary school journey at Sekolah Kebangsaan Bandar Baru Kuala Selangor was a vibrant and foundational period filled with curiosity and discovery, where I developed a love for learning under the guidance of dedicated teachers, made lifelong friends, and participated in various activities.I hold a position as a school prefect and I got 4 A's in the UPSR Exam.</p>
+                <img src="Image/sekrendah.jpg" alt="Elementary School">
+            </div>
+        </div>
+        <div class="timeline-item" data-parent="timeline">
+            <h4 class="timeline-date">2017 - 2022</h4>
+            <h2>HIGH SCHOOL</h2>
+            <div class="timeline-content">
+                <p>Graduated from SEKOLAH AGAMA MENENGAH JERAM with honors. My high school journey at Sekolah Agama Menengah Jeram Kuala Selangor was a deeply enriching experience that blended rigorous academic pursuits with a profound spiritual education, fostering both intellectual and moral growth.I took the SPM exam at this school. Thank God I got 6 A's and 3 B's.</p>
+                <img src="Image/sekmen.jpg" alt="High School">
+            </div>
+        </div>
+        <div class="timeline-item" data-parent="timeline">
+            <h4 class="timeline-date">2022 - NOW</h4>
+            <h2>UNIVERSITY</h2>
+            <div class="timeline-content">
+                <p>I'm doing my Diploma at Universiti Teknologi Mara Cawangan Kedah in the Library Informatics course, where I have engaged in research projects and internships that have significantly shaped my career, providing me with practical experience and a deep understanding of the field.During these 4 semesters at university, I managed to do well during the final exam. and I got the best CGPA which is 3.63.</p>
+                <img src="Image/uitmlogo.png" alt="University">
+                <img src="Image/uitmkedah.jpg" alt="University">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Syaza 2024. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for accordion functionality
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelectorAll('.timeline-item').forEach(el => {
+                    if (el !== item) {
+                        el.classList.remove('active');
+                    }
+                });
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

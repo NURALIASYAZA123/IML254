@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Friends</title>
+    <link rel="stylesheet" href="myfriend.css">
+</head>
+<body>
+ <header>
+        <div class="logo">SYAZA</div>
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="index.html">SYAZA</a></div>
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li class="dropdown">
+                        <a href="#">My Family</a>
+                        <ul class="dropdown-content">
+                            <li><a href="myparents.html">Parents</a></li>
+                            <li><a href="mysiblings.html">Siblings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="myfriend.html">Friends</a></li>
+                    <li><a href="myhobby.html">Hobby</a></li>
+                    <li><a href="myexperience.html">Experience</a></li>
+                    <li><a href="mygallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+        </nav>
+    </header>
+     <div class="friends-header">
+         <h1>My Friends</h1>
+         <div class="buttons">
+             <button onclick="scrollToSection('highschool-friends')">High School Friends</button>
+             <button onclick="scrollToSection('diploma-friends')">Diploma Friends</button>
+         </div>
+     </div>
+    <main>
+        <section id="highschool-friends" class="friends-section">
+            <table class="invisible-table">
+                <tr>
+                    <th>
+                        <h2>High School Friends</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="friend">
+                        <img src="Image/myfriends1.jpg" alt="High School Friend 1">
+                        <p>RUSHDIANS FRIENDS</p>
+                        <p>My high school friends have always held a special place in my heart.From the moment we met, we formed an unbreakable bond that has only grown stronger over the years.</p>
+                    </td>
+                    <td class="friend">
+                        <img src="Image/myfriends5.jpg" alt="High School Friend 2">
+                        <p>RUSHDIANS MEMBERS</p>
+                        <p>My high school friends are more than just companions; they are like family.These friendships were built on a foundation of trust, loyalty, and mutual respect, making every moment spent together incredibly meaningful.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="photo-slider">
+            <h2>Photo Slider</h2>
+            <div class="slider">
+                <div class="slide"><img src="Image/myfriends2.jpg" alt="Photo 1"></div>
+                <div class="slide"><img src="Image/myfriends4.jpg" alt="Photo 2"></div>
+                <div class="slide"><img src="Image/myfriends6.jpg" alt="Photo 3"></div>
+                
+            </div>
+        </section>
+        <section id="diploma-friends" class="friends-section">
+            
+            <table class="invisible-table">
+                <tr>
+                    <th>
+                        <h2>Diploma Friends</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="friend">
+                        <img src="Image/myfriends7.jpg" alt="Diploma Friend 1">
+                        <p>KCDIM144C MEMBERS</p>
+                        <p>I love my diploma friends because they have been my pillars of support throughout some of the most challenging and rewarding years of my academic journey. Together, we navigated the complexities of our coursework, celebrated each other's successes, and offered a shoulder to lean on during tough times.</p>
+                    </td>
+                    <td class="friend">
+                        <img src="Image/myfriends8.jpg" alt="Diploma Friend 2">
+                        <p>THE ROOMMATES</p>
+                        <p>I cherish my diploma roommates dearly because they have become more than just housemates; they are my second family. Living together has allowed us to share not only living space but also our lives, creating a bond that is built on trust, understanding, and genuine affection.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="video-section">
+            <h2>Video Memories</h2>
+            <video controls>
+                <source src="video/myfriends.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    <footer>
+        <p>&copy; Syaza 2024. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
